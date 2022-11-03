@@ -83,3 +83,18 @@
   margin-right: 10px;
 }
 
+.link.header__nav-link--current{
+  color: var(--color-sense);
+}
+.link.header__nav-link--current::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--color-sense);
+}
